@@ -46,7 +46,6 @@ export class Navbar extends Component {
             </button>
             <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
               <Layout />
-          
             </div>
           </div>
         </nav>
