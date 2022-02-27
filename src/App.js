@@ -2,7 +2,6 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Nav/Navbar";
-import Layout from "./components/Nav/Layout/Layout";
 import Home from "./pages/Home/Home";
 import Participate from "./pages/Participate/Participate";
 import Tokenomics from "./pages/Tokenomics/Tokenomics";
@@ -13,14 +12,15 @@ import DEX from "./pages/DEX/Dex";
 function App() {
   return (
     <>
+    
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navbar />}>
             <Route path="/Participate" element={<Participate />} />
             <Route path="/tokenomics" element={<Tokenomics />} />
-            <Route path="Staking" element={<Staking />} />
-            <Route path="YieldFarming" element={<YieldFarming />} />
-            <Route path="DEX" element={<DEX />} />
+            <Route path="/Staking" element={<Staking />} />
+            <Route path="/YieldFarming" element={<YieldFarming />} />
+            <Route path="/Dex" element={<DEX />} />
           </Route>
         </Routes>
       </BrowserRouter>
