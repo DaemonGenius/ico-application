@@ -9,7 +9,7 @@ export class Navbar extends Component {
     return (
       <>
         <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
-          <div className="container flex flex-wrap justify-between items-center mx-auto">
+          <div className="container flex flex-col flex-wrap justify-between items-center mx-auto">
             <img src={logo} className="" alt="logo" />
             <button
               data-collapse-toggle="mobile-menu"

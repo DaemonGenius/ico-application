@@ -2,8 +2,11 @@ import React, { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import MetaMaskButton from "../Buttons/MetaMask/MetaMask";
 import Account from "../Account/Account";
+import { useSelector, useDispatch } from "react-redux";
+import { LOGGED_IN } from "../../actions";
 
 const WalletCardEthers = () => {
+  const isLogged = useSelector((state) => state.isLogged);
   const [errorMessage, setErrorMessage] = useState(null);
   const [defaultAccount, setDefaultAccount] = useState(null);
   const [userBalance, setUserBalance] = useState(null);
@@ -16,6 +19,8 @@ const WalletCardEthers = () => {
       setProvider(new ethers.providers.Web3Provider(window.ethereum));
 
       // connect to metamask
+      
+      LOGGED_IN();
       window.ethereum
         .request({ method: "eth_requestAccounts" })
         .then((result) => {
@@ -36,6 +41,7 @@ const WalletCardEthers = () => {
       provider.getBalance(defaultAccount).then((balanceResult) => {
         setUserBalance(ethers.utils.formatEther(balanceResult));
       });
+
     }
   }, [defaultAccount]);
 

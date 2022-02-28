@@ -1,6 +1,9 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+
+
+
 import Navbar from "./components/Nav/Navbar";
 import Home from "./pages/Home/Home";
 import Governance from "./pages/Governance/Governance";
@@ -17,6 +20,9 @@ import TradingPlatform from "./pages/TradingPlatform/TradingPlatform";
 import NftPlatform from "./pages/NftPlatform/NftPlatform";
 
 function App() {
+
+  // store.dispatch();
+
   return (
     <>
       <BrowserRouter>
