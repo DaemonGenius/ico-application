@@ -19,9 +19,12 @@ export default function useAccount() {
 
         let instance = new web3.eth.Contract(
           Steinnegen.abi,
-          account,
-        );
-        console.log(await instance);
+          "0xd1cc5b72A8571c24c5293BA3B1b3C06435bD5Fdf",
+           {
+            from: '0xd1cc5b72A8571c24c5293BA3B1b3C06435bD5Fdf', // default from address
+            gasPrice: '20000000000' // default gas price in wei, 20 gwei in this case
+        });
+        console.log(await instance.methods.name().call());
   
       } catch (error) {
         console.error(error);
