@@ -12,13 +12,25 @@ import allReducer from "./reducers";
 import { Provider } from "react-redux";
 import store from "./store/saveToLocalStorage";
 
+import Web3 from "web3";
+import { Web3ReactProvider } from "@web3-react/core";
+import { MetaMaskProvider } from "./hooks/metamask";
+import './polyfill';
+
+function getLibrary(provider, connector) {
+  return new Web3(provider);
+}
 
 ReactDOM.render(
-  <Provider store={store}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </Provider>,
+  <React.StrictMode>
+    <Web3ReactProvider getLibrary={getLibrary}>
+      <MetaMaskProvider>
+        <Provider store={store}>
+          <App />
+        </Provider>
+      </MetaMaskProvider>
+    </Web3ReactProvider>
+  </React.StrictMode>,
   document.getElementById("root")
 );
 
