@@ -15,12 +15,12 @@ const WalletCardEthers = () => {
   const { connect, disconnect, isActive, account, shouldDisable, chainId } =
     useMetaMask();
 
-  const  balance = useAccount();
+  const balance = useAccount();
 
   return (
     <>
       {account ? (
-        <Account defaultAccount={account} userBalance={balance} />
+        <Account defaultAccount={account} ethBalance={balance[0]} steinBalance={balance[1]}  />
       ) : (
         <div>
           <MetaMaskButton />
