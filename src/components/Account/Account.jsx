@@ -3,8 +3,7 @@ import React from "react";
 function Account(props) {
   return (
     <>
-
-      <div className="items-center text-base font-semibold text-gray-900 dark:text-white">
+      <div className="float-right items-center text-base font-semibold text-gray-900 dark:text-white">
         <h3>Balance:</h3>
         <div class="inline-flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white">
           <span class="flex-1 ml-3 whitespace-nowrap">ETH:</span>

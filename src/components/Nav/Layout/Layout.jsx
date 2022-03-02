@@ -168,10 +168,6 @@ export default class Layout extends Component {
             </button>
           </div>
         </li>
-
-        <li>
-          <WalletCardEthers />
-        </li>
       </ul>
     );
   }
