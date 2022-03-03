@@ -8,9 +8,9 @@ import { createStore, combineReducers, applyMiddleware } from "redux";
 import { composeWithDevTools } from "remote-redux-devtools";
 import { provider } from "react-redux";
 
-import allReducer from "./reducers";
+import allReducer from "./redux/reducers";
 import { Provider } from "react-redux";
-import store from "./store/saveToLocalStorage";
+import store from "./redux/store/saveToLocalStorage";
 
 import Web3 from "web3";
 import { Web3ReactProvider } from "@web3-react/core";
