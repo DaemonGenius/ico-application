@@ -21,6 +21,7 @@ function useSteinnegen() {
 
         setInstance(lib);
         setUtils(library.utils);
+        
       } catch (error) {
         console.error(error);
       }
