@@ -26,6 +26,7 @@ ReactDOM.render(
     <Web3ReactProvider getLibrary={getLibrary}>
       <MetaMaskProvider>
         <Provider store={store}>
+          
           <App />
         </Provider>
       </MetaMaskProvider>
