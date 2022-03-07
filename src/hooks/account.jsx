@@ -19,7 +19,7 @@ export default function useAccount() {
       try {
         let instance = new library.eth.Contract(
           Steinnegen.abi,
-          "0x83B4E9d1a44829Dd2DcbA412B023A0225BEb220E",
+          "0xdb1dC977f52CE6E5fCeaDB5Bd8bB264180d65861",
           {
             from: account, // default from address
             gasPrice: "20000000000", // default gas price in wei, 20 gwei in this case
@@ -28,7 +28,7 @@ export default function useAccount() {
         setSteinBalance(
           library.utils.fromWei(
             await instance.methods
-              .balanceOf(account)
+              .balanceOf('0x63E22bc4650ddfAE706D1f9b92001790A0f9631d')
               .call(),
             "ether"
           )

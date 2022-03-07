@@ -18,7 +18,7 @@ import Defi from "./pages/Defi/Defi";
 import SupplyChain from "./pages/SupplyChain/SupplyChain";
 import TradingPlatform from "./pages/TradingPlatform/TradingPlatform";
 import NftPlatform from "./pages/NftPlatform/NftPlatform";
-
+import ICO from "./pages/ICO/ICO";
 function App() {
 
   // store.dispatch();
@@ -28,6 +28,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navbar />}>
+            <Route path="/ICO" element={<ICO />} />
             <Route path="/Governance" element={<Governance />} />
             <Route path="/Participate" element={<Participate />} />
             <Route path="/tokenomics" element={<Tokenomics />} />

@@ -27,7 +27,7 @@ function useTokenSale() {
     }
   }, [account, library]);
 
-  return [instance, utils];
+  return [instance];
 }
 
 export default useTokenSale;
