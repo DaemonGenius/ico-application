@@ -14,13 +14,13 @@ const Tokenomics = () => {
   return (
     <>
       <div className="container mx-auto">
-        <div class="p-6 max-w-sm">
+        <div className="p-6 max-w-sm">
           <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
               Tokenomics
             </h5>
           </a>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
             TOKEN INFO - BLOCKS We designed a brand-new cool design and lots of
             features, the latest version of the template supports advanced block
             base scenarios, and more.
@@ -28,93 +28,93 @@ const Tokenomics = () => {
         </div>
         <div className="flex flex-row">
           <div className="basis-1/2">
-            <div class="flex flex-col">
-              <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-                <div class="inline-block py-2 min-w-full sm:px-6 lg:px-8">
-                  <div class="overflow-hidden ">
-                    <table class="min-w-full">
-                      <thead class="">
+            <div className="flex flex-col">
+              <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                <div className="inline-block py-2 min-w-full sm:px-6 lg:px-8">
+                  <div className="overflow-hidden ">
+                    <table className="min-w-full">
+                      <thead className="">
                         <tr>
                           <th
                             colSpan={2}
                             scope="col"
-                            class="py-3 px-6 text-2xl font-thin tracking-wider text-center text-blue-700 uppercase dark:text-blue-400"
+                            className="py-3 px-6 text-2xl font-thin tracking-wider text-center text-blue-700 uppercase dark:text-blue-400"
                           >
                             Sales Information
                           </th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr class="border-b ">
-                          <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                        <tr className="border-b ">
+                          <td className="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-black">
                             Public Sale Starts
                           </td>
-                          <td class="py-4 px-6 text-sm font-thin text-gray-900 whitespace-nowrap dark:text-black">
+                          <td className="py-4 px-6 text-sm font-thin text-gray-900 whitespace-nowrap dark:text-black">
                             15th Nov 2022 12:00 GMT+2
                           </td>
                         </tr>
 
-                        <tr class="border-b ">
-                          <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                        <tr className="border-b ">
+                          <td className="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-black">
                             Public Sale Ends
                           </td>
-                          <td class="py-4 px-6 text-sm font-thin text-gray-900 whitespace-nowrap dark:text-black">
+                          <td className="py-4 px-6 text-sm font-thin text-gray-900 whitespace-nowrap dark:text-black">
                             14th Dec 2022 12:00 GMT+2
                           </td>
                         </tr>
 
-                        <tr class="border-b ">
-                          <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                        <tr className="border-b ">
+                          <td className="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-black">
                             Total Token Supply
                           </td>
-                          <td class="py-4 px-6 text-sm font-thin text-gray-900 whitespace-nowrap dark:text-black">
+                          <td className="py-4 px-6 text-sm font-thin text-gray-900 whitespace-nowrap dark:text-black">
                            { formatCurrency(tokenSupply) }
                           </td>
                         </tr>
 
-                        <tr class="border-b ">
-                          <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                        <tr className="border-b ">
+                          <td className="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-black">
                             Tokens Allocated for ICO
                           </td>
-                          <td class="py-4 px-6 text-sm font-thin text-gray-900 whitespace-nowrap dark:text-black">
+                          <td className="py-4 px-6 text-sm font-thin text-gray-900 whitespace-nowrap dark:text-black">
                             50 000 000
                           </td>
                         </tr>
 
-                        <tr class="border-b ">
-                          <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                        <tr className="border-b ">
+                          <td className="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-black">
                             Soft Cap
                           </td>
-                          <td class="py-4 px-6 text-sm font-thin text-gray-900 whitespace-nowrap dark:text-black">
+                          <td className="py-4 px-6 text-sm font-thin text-gray-900 whitespace-nowrap dark:text-black">
                             $1.75m
                           </td>
                         </tr>
 
-                        <tr class="border-b ">
-                          <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                        <tr className="border-b ">
+                          <td className="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-black">
                             Hard Cap
                           </td>
-                          <td class="py-4 px-6 text-sm font-thin text-gray-900 whitespace-nowrap dark:text-black">
+                          <td className="py-4 px-6 text-sm font-thin text-gray-900 whitespace-nowrap dark:text-black">
                             $4.75m
                           </td>
                         </tr>
 
-                        <tr class="border-b ">
-                          <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                        <tr className="border-b ">
+                          <td className="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-black">
                             Token Value
                           </td>
-                          <td class="py-4 px-6 text-sm font-thin text-gray-900 whitespace-nowrap dark:text-black">
+                          <td className="py-4 px-6 text-sm font-thin text-gray-900 whitespace-nowrap dark:text-black">
                             1 ETH = 1,000 STEIN
                           </td>
                         </tr>
-                        <tr class="border-b ">
-                          <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                        <tr className="border-b ">
+                          <td className="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-black">
                             Accepted
                           </td>
-                          <td class="py-4 px-6 text-sm font-thin text-gray-900 whitespace-nowrap dark:text-black">
-                            <span class="text-gray-900 bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 mr-2 mb-2">
+                          <td className="py-4 px-6 text-sm font-thin text-gray-900 whitespace-nowrap dark:text-black">
+                            <span className="text-gray-900 bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 mr-2 mb-2">
                               <svg
-                                class="w-4 h-4 mr-2 -ml-1 text-[#626890]"
+                                className="w-4 h-4 mr-2 -ml-1 text-[#626890]"
                                 aria-hidden="true"
                                 focusable="false"
                                 data-prefix="fab"
@@ -130,9 +130,9 @@ const Tokenomics = () => {
                               </svg>
                               ETH
                             </span>
-                            <span class="text-white bg-[#FF9119] focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#FF9119]/40 mr-2 mb-2">
+                            <span className="text-white bg-[#FF9119] focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#FF9119]/40 mr-2 mb-2">
                               <svg
-                                class="mr-2 -ml-1 w-4 h-4"
+                                className="mr-2 -ml-1 w-4 h-4"
                                 aria-hidden="true"
                                 focusable="false"
                                 data-prefix="fab"
@@ -158,22 +158,22 @@ const Tokenomics = () => {
             </div>
           </div>
           <div className="basis-1/2">
-            <div class="flex flex-col">
-              <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-                <div class="inline-block py-2 min-w-full sm:px-6 lg:px-8">
-                  <div class="overflow-hidden ">
+            <div className="flex flex-col">
+              <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                <div className="inline-block py-2 min-w-full sm:px-6 lg:px-8">
+                  <div className="overflow-hidden ">
                     <div
                       scope="col"
-                      class="py-3 px-6 text-2xl font-thin tracking-wider text-center text-blue-700 uppercase dark:text-blue-400"
+                      className="py-3 px-6 text-2xl font-thin tracking-wider text-center text-blue-700 uppercase dark:text-blue-400"
                     >
                       Token Sale Stage End In
                     </div>
                     <div>
                       <div className="py-3 px-6">
-                        <div class="mb-3 font-normal text-gray-700 dark:text-black">
+                        <div className="mb-3 font-normal text-gray-700 dark:text-black">
                           <div
                             scope="col"
-                            class=" text-2xl font-thin tracking-wider text-center text-blue-700 uppercase dark:text-blue-400"
+                            className=" text-2xl font-thin tracking-wider text-center text-blue-700 uppercase dark:text-blue-400"
                           >
                             $ {tokenSaleFund}
                           </div>

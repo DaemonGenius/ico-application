@@ -8,6 +8,9 @@ export default function useTokenSupply() {
   let utils = useSteinnegen()[1]
 
   useEffect(async () => {
+
+  
+    console.log(utils);
     try {
       setTotalSupply(
         utils.fromWei(await instance.methods.totalSupply().call(), "ether")
