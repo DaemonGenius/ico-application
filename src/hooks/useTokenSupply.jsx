@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from "react";
 import useSteinnegen from "./useSteinnegen";
+import useVault from "./useVault";
 
 export default function useTokenSupply() {
   const [totalSupply, setTotalSupply] = useState();
 
   let instance = useSteinnegen()[0];
   let utils = useSteinnegen()[1];
+  let vault = useVault()[0];
 
   useEffect(async () => {
     try {
       console.log("asd");
-      console.log(
-        await instance.methods
-          .balanceOf("0x14607953Cf74fC71CD1ACD471b326bD947a864E9")
-          .call()
-      );
+
+      let info = await vault;
+      console.log(info);
 
       setTotalSupply(
         utils.fromWei(await instance.methods.totalSupply().call(), "ether")

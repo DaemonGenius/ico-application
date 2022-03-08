@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import TokenSale from "@DaemonGenius/ico/ico-steinnegen-coin/build/contracts/VaultFactory.json";
+import Vault from "@DaemonGenius/ico/ico-steinnegen/build/contracts/Vault.json";
 import { useWeb3React } from "@web3-react/core";
 
 function useVault() {
@@ -11,13 +11,16 @@ function useVault() {
     if (account) {
       try {
         let lib = new library.eth.Contract(
-          TokenSale.abi,
-          "0x83B4E9d1a44829Dd2DcbA412B023A0225BEb220E",
+          Vault.abi,
+          "0x63E22bc4650ddfAE706D1f9b92001790A0f9631d",
           {
-            from: account, // default from address
+            from: '0x00a7718EE2cA322bE6Da3E3aC073b743e39399c1', // default from address
             gasPrice: "20000000000", // default gas price in wei, 20 gwei in this case
           }
         );
+
+
+        console.log(lib)
 
         setInstance(lib);
         setUtils(library.utils);
@@ -30,4 +33,4 @@ function useVault() {
   return [instance];
 }
 
-export default useTokenSale;
+export default useVault;

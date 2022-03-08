@@ -5,7 +5,7 @@
   "dependencies": {
     "@DaemonGenius/ico/ico-decentral-bank": "https://github.com/DaemonGenius/ico-decentral-bank-smart-contract.git",
     "@DaemonGenius/ico/ico-nft": "https://github.com/DaemonGenius/ico-nft-smart-contract.git",
-    "@DaemonGenius/ico/ico-steinnegen": "https://github.com/DaemonGenius/ico-steinnegen-coin.git",
+    "@DaemonGenius/ico/ico-steinnegen": "https://github.com/DaemonGenius/ico-steinnegen-coin.git#feature/improved_steinnegen",
     "@DaemonGenius/ico/ico-steinnegen-token-sale": "https://github.com/DaemonGenius/ico-steinnegen-token-sale-smart-contract.git",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
